@@ -1,7 +1,6 @@
-const toggleBtn = document.getElementById("themeToggle");
-const body = document.body;
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
 
-toggleBtn.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  toggleBtn.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("collapsed");
 });
